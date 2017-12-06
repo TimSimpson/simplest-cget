@@ -1,5 +1,5 @@
 #include <iostream>
 
-void dog() {
+void bark() {
     std::cout << "BARK!\n";
 }
