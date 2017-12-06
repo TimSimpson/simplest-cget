@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.5)
 project(dog-app)
 
-find_library(dog_lib_path NAMES "dog_lib" PATHS "${CMAKE_CURRENT_SOURCE_DIR}/lib")
+find_library(dog_lib_path NAMES "dog_lib")
 add_library(dog_lib STATIC IMPORTED)
 set_property(TARGET dog_lib PROPERTY IMPORTED_LOCATION "${dog_lib_path}")
 
